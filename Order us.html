@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Cake | Cakeify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Order Your Cake</h1>
+        <p>Delicious cakes for every occasion. Customize and order your perfect cake from Cakeify!</p>
+    </header>
+
+    <main class="order-form">
+        <form action="#" method="post">
+            <h2>Cake Selection</h2>
+            
+            <label for="flavor">Choose Cake Flavor:</label>
+            <select id="flavor" name="flavor" required>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="red-velvet">Red Velvet</option>
+                <option value="black-forest">Black Forest</option>
+                <option value="butterscotch">Butterscotch</option>
+            </select>
+
+            <label for="size">Cake Size:</label>
+            <select id="size" name="size" required>
+                <option value="0.5kg">0.5 kg</option>
+                <option value="1kg">1 kg</option>
+                <option value="2kg">2 kg</option>
+                <option value="custom">Custom Size</option>
+            </select>
+
+            <label for="message">Personalized Message (optional):</label>
+            <input type="text" id="message" name="message" maxlength="50" placeholder="Happy Birthday, etc.">
+
+            <h2>Delivery Information</h2>
+            
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="date">Delivery Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Delivery Time:</label>
+            <input type="time" id="time" name="time">
+
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Cakeify. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
